@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const ROOM_ID = "<%= roomId %>"
+    </script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <link rel="stylesheet" href="style.css" defer>
+</head>
+<body>
+    <main id="room-content">
+        <section id="video-flexbox"></section>
+        <section id="video-chat">
+            <ul id="video-chat-log"></ul>
+            <div id="video-chat-message">
+                <input type="text" name="chat-message" id="chat-message" placeholder="Enter a message...">
+                <input type="submit" value="Send message">
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
